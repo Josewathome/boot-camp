@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <p id="score">Score: 0</p>
+        <button id="settingsBtn">Settings</button>
+    </div>
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Game Settings</h3>
+            <label>Gravity:</label>
+            <input type="range" id="gravitySlider" min="1" max="10" value="3">
+            <label>Pipe Speed:</label>
+            <input type="range" id="speedSlider" min="2" max="10" value="5">
+            <label>Pipe Gap:</label>
+            <input type="range" id="gapSlider" min="80" max="150" value="120">
+            <button id="applySettings">Apply</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
